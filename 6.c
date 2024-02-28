@@ -51,7 +51,7 @@ void insert()
    else
    {
       printf("Enter an element : \n");
-      scanf("%c",&e);
+      scanf("%d",&e);
       r=(r+1)%MAX;
       queue[r]=e;
       cnt=cnt+1;
