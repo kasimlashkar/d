@@ -83,7 +83,7 @@ void display()
   }
   else
   {
-    printf(“Contents of the Queue is\n”);
+    printf("Contents of the Queue is\n");
     if(f<r)
     {
     for(i=f;i<=r;i++)
