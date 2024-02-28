@@ -37,6 +37,6 @@ int main()
 	   stack[++top]=res;
        }
      }
-     printf("Value of %s expression is %f\n",res);
+     printf("Value of %s expression is %f\n",postfix,res);
   return 0;
   }
