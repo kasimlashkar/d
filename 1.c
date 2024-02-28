@@ -12,13 +12,13 @@ typedef struct day *daylst;
 void adddetails(daylst);
 daylst createcal();
 void display(daylst);
-void main()
+int main()
 {
    daylst cal;
    cal=createcal();
    adddetails(cal);
    display(cal);
-
+   return 0;
 }
 
 daylst createcal()
