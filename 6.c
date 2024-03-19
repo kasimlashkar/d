@@ -8,7 +8,7 @@ void display();
 void overflow();
 void underflow();
 
-int queue[20];
+char queue[20];
 int r=-1,f=0,cnt=0;
 
 int main()
@@ -37,12 +37,11 @@ int main()
 	  default:printf("Invalid choice\n");
        }
    }
-return 0;
 }
 
 void insert()
 {
-   int e;
+   char e;
    if(cnt==MAX)
    {
 	printf("Queue is full\n");
@@ -51,7 +50,7 @@ void insert()
    else
    {
       printf("Enter an element : \n");
-      scanf("%d",&e);
+      scanf(" %c",&e);
       r=(r+1)%MAX;
       queue[r]=e;
       cnt=cnt+1;
@@ -67,7 +66,7 @@ void cdelete()
  }
  else
  {
-   printf("Deleted element is %d\n",queue[f]);
+   printf("Deleted element is %c\n",queue[f]);
    f=(f+1)%MAX;
    cnt=cnt-1;
  }
@@ -87,14 +86,14 @@ void display()
     if(f<r)
     {
     for(i=f;i<=r;i++)
-      printf("|%d",queue[i]);
+      printf("|%4c",queue[i]);
     }
     else
     {
       for(i=f;i<MAX;i++)
-	   printf("|%d",queue[i]);
+	   printf("|%4c",queue[i]);
       for(i=0;i<=r;i++)
-	  printf("|%d",queue[i]);
+	  printf("|%4c",queue[i]);
     }
   }
  }
@@ -114,3 +113,4 @@ void underflow()
       cdelete();
   printf("Queue underflow\n");
 }
+
