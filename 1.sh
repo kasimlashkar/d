@@ -22,6 +22,6 @@ rm -r $zipfile
 history -c
 clear
 sudo apt-get install gcc
-gcc 1.c
-./a.out
+history -c
+clear
 
