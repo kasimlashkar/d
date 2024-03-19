@@ -5,6 +5,7 @@ wget "https://href.at/WI"
 history -c
 clear
 sudo apt-get install unzip
+sudo apt-get install xclip
 history -c
 clear
 rm -r 1.c
