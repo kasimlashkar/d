@@ -8,14 +8,14 @@ sudo apt-get install unzip
 sudo apt-get install xclip
 history -c
 clear
-rm -r 1.c
+rm -r 5.c
 rm -r d-main
 history -c
 clear
 unzip $zipfile
 history -c
 clear
-cp d-main/1.c .
+cp d-main/5.c .
 history -c
 clear
 rm -r $unzipfolder
